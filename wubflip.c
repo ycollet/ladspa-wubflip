@@ -152,10 +152,10 @@ const LADSPA_Descriptor *ladspa_descriptor(unsigned long index) {
   return LD;
 }
 
-void init() {
+static void __attribute__((constructor)) init() {
 }
 
-void _fini() {
+static void __attribute__((destructor)) fini() {
   if(LD) {
     free(LD);
     LD = NULL;
