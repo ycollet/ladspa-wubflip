@@ -1,0 +1,30 @@
+WubFlip ladspa effect plugin
+============================
+
+OVERVIEW
+
+I am not an expert on effects algorithms. I just thought I'd mess around with
+the audio data and see what happens. WubFlip was the result. 
+
+It sort of flips high or low values beyond a threshold making a dirty distorted
+mess of the sound that might be useful for people making wanting big dirty
+breaks or synths or something like that.
+
+Play around with the sliders. The upper threshold slider needs to be higher
+(to the right of) than the lower threshold slider otherwise you'll get no sound.
+The difference between them effects the sound. Then the multiplier slider effects
+how much "flipping" gets done.
+
+
+COMPILATION/INSTALLATION;
+
+
+typing make should build it if you have the LADSPA SDK installed.
+
+
+"make install" will copy the .so to /usr/lib/ladspa
+
+
+CONTACT
+
+Mail me at alexsisson@gmail.com - please put wubflip in the subject.
